@@ -16,7 +16,15 @@
     "electron",
     "minecraft"
   ],
+  "scripts": {
+    "start": "npm run build && electron ./dist/main.js",
+    "build": "tsc"
+  },
   "dependencies": {
-    "phin": "^2.9.0"
+    "phin": "^2.9.0",
+    "typescript": "^2.6.2"
+  },
+  "devDependencies": {
+    "electron": "^1.7.11"
   }
 }
