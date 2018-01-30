@@ -1,0 +1,19 @@
+environment:
+  nodejs_version: "8.9.0"
+
+platform:
+  - x64
+  - x86
+
+skip_tags: true
+version: "{build}"
+
+install:
+  - ps: Install-Product node $env:nodejs_version $env:platform
+  - yarn
+
+build_script:
+  - yarn build
+
+test_script:
+  - node --version
