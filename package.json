@@ -21,7 +21,6 @@
     "build": "tsc"
   },
   "dependencies": {
-    "phin": "^2.9.0",
     "typescript": "^2.6.2"
   },
   "devDependencies": {
