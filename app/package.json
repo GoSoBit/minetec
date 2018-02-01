@@ -2,6 +2,7 @@
   "name": "minetec",
   "productName": "MineTec",
   "version": "1.0.0",
+  "license": "MIT",
   "author": "Neolumia",
   "description": "A custom Minecraft launcher",
   "main": "./main.js",
