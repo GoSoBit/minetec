@@ -11,9 +11,11 @@ version: "{build}"
 install:
   - ps: Install-Product node $env:nodejs_version $env:platform
   - yarn
+  - cd app && yarn
 
 build_script:
   - yarn compile
 
 test_script:
   - node --version
+  - yarn --version
