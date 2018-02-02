@@ -14,8 +14,15 @@ const main = merge.smart(common.main, {
 const renderer = merge({}, common.renderer, {
   devtool: 'source-map',
 
+  entry: {
+    renderer: [
+     // 'webpack-hot-middleware/client?path=http://localhost:3000/__webpack_hmr',
+      common.renderer.entry.renderer,
+    ],
+  },
+
   output: {
-    publicPath: `http://localhost:${project.port}/out/`,
+    publicPath: 'http://localhost:3000/build/',
   },
 
   plugins: [
