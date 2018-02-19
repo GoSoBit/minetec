@@ -3,6 +3,8 @@ import * as ReactDOM from 'react-dom';
 
 import {App} from './app'
 
+require('../styles/app.scss')
+
 document.body.classList.add(`${process.platform}`);
 
 ReactDOM.render(
